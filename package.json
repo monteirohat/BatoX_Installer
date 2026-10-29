@@ -65,7 +65,9 @@
         "deb"
       ],
       "category": "Utility",
-      "maintainer": "monteirohat <monteirohat@users.noreply.github.com>"
+      "maintainer": "monteirohat <monteirohat@users.noreply.github.com>",
+      "icon": "build/icons",
+      "executableName": "batox-installer"
     },
     "win": {
       "target": [
@@ -89,6 +91,12 @@
       ],
       "category": "public.app-category.utilities"
     },
-    "npmRebuild": false
+    "npmRebuild": false,
+    "extraResources": [
+      {
+        "from": "build/icons/512x512.png",
+        "to": "icon.png"
+      }
+    ]
   }
 }

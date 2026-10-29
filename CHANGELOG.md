@@ -6,6 +6,12 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+### Fixed
+
+- Linux: the app icon now shows in the app menu, the dock and the window title bar, instead of
+  a generic icon. The package ships the icon in every standard size, and the window sets it
+  explicitly.
+
 ## [1.0.0] - 2026-10-29
 
 ### Added

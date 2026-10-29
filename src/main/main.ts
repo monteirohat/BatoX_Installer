@@ -14,8 +14,18 @@ function isWebUrl(url: string): boolean {
   return /^https?:\/\//i.test(url);
 }
 
+// On Linux the window icon must be set explicitly; Windows and macOS take it
+// from the packaged app. In development the file is read from build/icons.
+function windowIcon(): string | undefined {
+  if (process.platform !== "linux") return undefined;
+  return app.isPackaged
+    ? path.join(process.resourcesPath, "icon.png")
+    : path.join(__dirname, "../../build/icons/512x512.png");
+}
+
 function createWindow(): void {
   win = new BrowserWindow({
+    icon: windowIcon(),
     width: 1040,
     height: 700,
     minWidth: 900,
