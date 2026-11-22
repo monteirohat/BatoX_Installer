@@ -6,6 +6,8 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-11-22
+
 ### Changed
 
 - A new look, the one of the BatoX web app and of
@@ -14,6 +16,8 @@ All notable changes to this project are documented here. The format follows
   selected or done (a finished step, the chosen option, the main button) in place of the blue.
   The progress bars are thin white lines, as on the theme's loading screen.
 - A new logo and app icon: "BatoX" in a pink script. Inter ships with the installer.
+
+## [1.0.1] - 2026-10-29
 
 ### Fixed
 
@@ -35,5 +39,7 @@ All notable changes to this project are documented here. The format follows
 - Shows the BatoX address and API token at the end, with buttons to open and copy them.
 - Builds for Windows (installer and portable), macOS (dmg) and Linux (AppImage and deb).
 
-[Unreleased]: https://github.com/monteirohat/BatoX_Installer/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/monteirohat/BatoX_Installer/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/monteirohat/BatoX_Installer/compare/v1.0.1...v1.1.0
+[1.0.1]: https://github.com/monteirohat/BatoX_Installer/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/monteirohat/BatoX_Installer/releases/tag/v1.0.0
