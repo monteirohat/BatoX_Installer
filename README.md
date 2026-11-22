@@ -149,6 +149,11 @@ Store signs it when it is submitted in Partner Center. Its identity (`build.appx
 `package.json`) comes from the product's Product identity page there, and its tiles from
 `build/appx/`.
 
+## Privacy
+
+The installer collects nothing: no account, no analytics. What it connects to and what it keeps
+on your computer is in [PRIVACY.md](PRIVACY.md).
+
 ## License
 
 [MIT](LICENSE). BatoX and the BatoX Installer are independent projects, not affiliated with or
