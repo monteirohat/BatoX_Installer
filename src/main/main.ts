@@ -32,7 +32,7 @@ function createWindow(): void {
     minHeight: 620,
     show: false,
     title: "BatoX Installer",
-    backgroundColor: "#0B1120",
+    backgroundColor: "#050B1A",
     autoHideMenuBar: true,
     webPreferences: {
       preload: path.join(__dirname, "../preload/preload.js"),

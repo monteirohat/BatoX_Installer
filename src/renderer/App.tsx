@@ -10,7 +10,6 @@ import { InstallStep } from "./steps/InstallStep";
 import { VersionStep } from "./steps/VersionStep";
 import { ProgressList, overallPercent, type StepMap } from "./views/Progress";
 import { Failure, Success } from "./views/Result";
-import markUrl from "./assets/mark.svg";
 import wordmarkUrl from "./assets/wordmark.svg";
 
 type Phase =
@@ -63,8 +62,7 @@ export function App() {
     <div className="app">
       <header className="top">
         <div className="brand">
-          <img src={markUrl} width={52} height={32} alt="" />
-          <img src={wordmarkUrl} width={84} height={23} alt="BatoX" />
+          <img src={wordmarkUrl} width={115} height={46} alt="BatoX" />
           <span className="brand-tag">Installer</span>
         </div>
         <button className="link muted" onClick={() => void api.openExternal(`https://github.com/${appInfo?.repo ?? "monteirohat/BatoX"}`)}>

@@ -6,6 +6,15 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+### Changed
+
+- A new look, the one of the BatoX web app and of
+  [batox-theme](https://github.com/monteirohat/batox-theme): dark indigo surfaces over a sunset
+  picture, square corners, white type with titles in Inter Light, and a white frame on what is
+  selected or done (a finished step, the chosen option, the main button) in place of the blue.
+  The progress bars are thin white lines, as on the theme's loading screen.
+- A new logo and app icon: "BatoX" in a pink script. Inter ships with the installer.
+
 ### Fixed
 
 - Linux: the app icon now shows in the app menu, the dock and the window title bar, instead of
