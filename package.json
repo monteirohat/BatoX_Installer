@@ -1,7 +1,7 @@
 {
   "name": "batox-installer",
   "productName": "BatoX Installer",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Install BatoX on a Batocera console over the network, in a few clicks.",
   "author": "monteirohat",
   "license": "MIT",
