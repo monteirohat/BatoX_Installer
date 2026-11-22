@@ -1,7 +1,7 @@
 {
   "name": "batox-installer",
   "productName": "BatoX Installer",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "Install BatoX on a Batocera console over the network, in a few clicks.",
   "author": "monteirohat",
   "license": "MIT",
@@ -72,12 +72,29 @@
     "win": {
       "target": [
         "nsis",
-        "portable"
+        "portable",
+        "appx"
       ]
     },
     "nsis": {
       "oneClick": false,
       "allowToChangeInstallationDirectory": true
+    },
+    "appx": {
+      "identityName": "AndrMonteiro.BatoXInstall",
+      "publisher": "CN=1F7606A3-2B92-4BF8-BBA8-D7BC4A7AE2EE",
+      "publisherDisplayName": "André Monteiro",
+      "displayName": "BatoX Install",
+      "applicationId": "BatoXInstaller",
+      "backgroundColor": "#15122B",
+      "languages": [
+        "en-US"
+      ],
+      "capabilities": [
+        "runFullTrust",
+        "internetClient",
+        "privateNetworkClientServer"
+      ]
     },
     "mac": {
       "target": [

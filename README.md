@@ -39,6 +39,8 @@ Get the installer for your computer from the
 | macOS | `BatoX-Installer-<version>-mac-arm64.dmg` (Apple Silicon) or `-mac-x64.dmg` (Intel) |
 | Linux | `BatoX-Installer-<version>-linux-x64.AppImage` or the `.deb` package |
 
+The release's `.appx` file is the Microsoft Store package: it installs only through the Store.
+
 The builds are not code-signed yet, so the first launch shows a warning:
 
 - **Windows:** SmartScreen says "Windows protected your PC". Choose **More info**, then **Run anyway**.
@@ -142,7 +144,10 @@ git push origin v1.0.0
 ```
 
 The release workflow builds the Windows, macOS and Linux installers and attaches them to the
-GitHub release.
+GitHub release. On Windows it also builds the Microsoft Store package (`.appx`), unsigned: the
+Store signs it when it is submitted in Partner Center. Its identity (`build.appx` in
+`package.json`) comes from the product's Product identity page there, and its tiles from
+`build/appx/`.
 
 ## License
 

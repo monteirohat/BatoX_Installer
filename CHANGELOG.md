@@ -6,6 +6,13 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+## [1.2.0] - 2026-11-22
+
+### Added
+
+- Windows: a Microsoft Store package (`.appx`), built with each release, with the app's tiles
+  and the Store identity of the BatoX Install product.
+
 ## [1.1.1] - 2026-11-22
 
 ### Fixed
@@ -47,7 +54,8 @@ All notable changes to this project are documented here. The format follows
 - Shows the BatoX address and API token at the end, with buttons to open and copy them.
 - Builds for Windows (installer and portable), macOS (dmg) and Linux (AppImage and deb).
 
-[Unreleased]: https://github.com/monteirohat/BatoX_Installer/compare/v1.1.1...HEAD
+[Unreleased]: https://github.com/monteirohat/BatoX_Installer/compare/v1.2.0...HEAD
+[1.2.0]: https://github.com/monteirohat/BatoX_Installer/compare/v1.1.1...v1.2.0
 [1.1.1]: https://github.com/monteirohat/BatoX_Installer/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/monteirohat/BatoX_Installer/compare/v1.0.1...v1.1.0
 [1.0.1]: https://github.com/monteirohat/BatoX_Installer/compare/v1.0.0...v1.0.1
