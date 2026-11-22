@@ -89,7 +89,9 @@
           ]
         }
       ],
-      "category": "public.app-category.utilities"
+      "category": "public.app-category.utilities",
+      "identity": "-",
+      "hardenedRuntime": false
     },
     "npmRebuild": false,
     "extraResources": [

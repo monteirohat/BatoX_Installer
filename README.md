@@ -42,7 +42,14 @@ Get the installer for your computer from the
 The builds are not code-signed yet, so the first launch shows a warning:
 
 - **Windows:** SmartScreen says "Windows protected your PC". Choose **More info**, then **Run anyway**.
-- **macOS:** right-click the app, choose **Open**, then **Open** again.
+- **macOS:** drag the app to Applications and open it. macOS says it "Not Opened" because Apple
+  could not check it: choose **Done**, then open **System Settings > Privacy & Security**, scroll
+  down and choose **Open Anyway** next to "BatoX Installer". Choose the `mac-arm64` file on a Mac
+  with Apple silicon (M1 and later) and `mac-x64` on an Intel Mac.
+- **macOS, version 1.1.0:** it says the app "is damaged" (that build wasn't signed at all). Drag it
+  to Applications, then in Terminal run
+  `xattr -cr "/Applications/BatoX Installer.app" && codesign --force --deep --sign - "/Applications/BatoX Installer.app"`,
+  or get a later version.
 - **Linux (AppImage):** make it executable first: `chmod +x BatoX-Installer-*.AppImage`.
 
 ## How to use

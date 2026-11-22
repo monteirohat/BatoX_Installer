@@ -6,6 +6,12 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+### Fixed
+
+- macOS: the app is signed (ad hoc), so macOS no longer calls it "damaged" and refuses to open
+  it. It isn't notarized by Apple, so the first launch still asks to allow it in System Settings
+  > Privacy & Security (see the README).
+
 ## [1.1.0] - 2026-11-22
 
 ### Changed
