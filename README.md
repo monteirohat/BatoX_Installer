@@ -30,20 +30,28 @@ and click **Install**.
 
 ## Download
 
-Get the installer for your computer from the
+On Windows, get **BatoX Install** from the Microsoft Store. The Store version is signed by
+Microsoft, so Windows shows no warning, and it updates on its own.
+
+<p>
+  <a href="https://apps.microsoft.com/detail/9pdjnh3mn0tv"><img src="https://get.microsoft.com/images/en-us%20dark.svg" alt="Get it from Microsoft" width="200"></a>
+</p>
+
+Or get the installer for your computer from the
 [latest release](https://github.com/monteirohat/BatoX_Installer/releases/latest):
 
 | System | File |
 |---|---|
-| Windows | `BatoX-Installer-<version>-win-x64.exe` (setup) or the portable `.exe` |
+| Windows | [Microsoft Store](https://apps.microsoft.com/detail/9pdjnh3mn0tv), or `BatoX-Installer-<version>-win-x64.exe` (setup) or the portable `.exe` |
 | macOS | `BatoX-Installer-<version>-mac-arm64.dmg` (Apple Silicon) or `-mac-x64.dmg` (Intel) |
 | Linux | `BatoX-Installer-<version>-linux-x64.AppImage` or the `.deb` package |
 
-The release's `.appx` file is the Microsoft Store package: it installs only through the Store.
+The release's `.appx` file is the package sent to the Microsoft Store: it installs only through the
+Store.
 
-The builds are not code-signed yet, so the first launch shows a warning:
+The builds on GitHub are not code-signed yet, so the first launch shows a warning:
 
-- **Windows:** SmartScreen says "Windows protected your PC". Choose **More info**, then **Run anyway**.
+- **Windows** (the `.exe` files; not the Store version): SmartScreen says "Windows protected your PC". Choose **More info**, then **Run anyway**.
 - **macOS:** drag the app to Applications and open it. macOS says it "Not Opened" because Apple
   could not check it: choose **Done**, then open **System Settings > Privacy & Security**, scroll
   down and choose **Open Anyway** next to "BatoX Installer". Choose the `mac-arm64` file on a Mac
@@ -145,7 +153,8 @@ git push origin v1.0.0
 
 The release workflow builds the Windows, macOS and Linux installers and attaches them to the
 GitHub release. On Windows it also builds the Microsoft Store package (`.appx`), unsigned: the
-Store signs it when it is submitted in Partner Center. Its identity (`build.appx` in
+Store signs it when it is submitted in Partner Center, as a new package of the
+[BatoX Install](https://apps.microsoft.com/detail/9pdjnh3mn0tv) product. Its identity (`build.appx` in
 `package.json`) comes from the product's Product identity page there, and its tiles from
 `build/appx/`.
 

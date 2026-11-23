@@ -6,6 +6,11 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+### Changed
+
+- The README points Windows users to [BatoX Install](https://apps.microsoft.com/detail/9pdjnh3mn0tv) in the Microsoft Store, which is
+  signed by Microsoft (no SmartScreen warning) and updates on its own.
+
 ## [1.2.0] - 2026-11-22
 
 ### Added
